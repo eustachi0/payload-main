@@ -1,4 +1,4 @@
-// function to generate arrays
+// function to generate array from an object
 const generateArrFromObj = (obj: any, arr: any) => {
   for (const val in obj as any) {
     if (obj[val] instanceof Array || obj[val] instanceof Object) {
@@ -15,7 +15,7 @@ const generateArrFromObj = (obj: any, arr: any) => {
   }
 };
 
-// function to compare states
+// function to flaten the array into a string
 export const generateStrFromObj = (obj: any) => {
   //arrays to store states values
   let arr = [];
